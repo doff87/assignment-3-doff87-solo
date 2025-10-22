@@ -4,19 +4,27 @@ Team Collaboration Project - Main Module
 
 def calculate_total(items):
     """Calculate total of items"""
-    return sum(items)
+    if all(isinstance(x, (int, float)) for x in items):
+        return sum(items)
+    else:
+        pass
+
+    
 
 def calculate_average(items):
     """Calculate average of items"""
-    return sum(items) / len(items)
+    if all(isinstance(x, (int, float)) for x in items):
+        return sum(items) / len(items)
 
 def find_max(items):
     """Find maximum value"""
-    return max(items)
+    if all(isinstance(x, (int, float)) for x in items):
+        return max(items)
 
 def find_min(items):
     """Find minimum value"""
-    return min(items)
+    if all(isinstance(x, (int, float)) for x in items):
+        return min(items)
 
 if __name__ == "__main__":
     numbers = [10, 20, 30, 40, 50]
