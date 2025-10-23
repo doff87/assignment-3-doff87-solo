@@ -22,10 +22,20 @@ def calculate_average(items):
 
 def find_max(items):
     """Find maximum value"""
+    try:
+        items = [float(x) for x in items]
+        return max(items)
+    except ValueError:
+        print("Error: All provided values must be numeric.")
     return max(items)
 
 def find_min(items):
     """Find minimum value"""
+    try:
+        items = [float(x) for x in items]
+        return min(items)
+    except ValueError:
+        print("Error: All provided values must be numeric.")
     return min(items)
 
 if __name__ == "__main__":
