@@ -15,7 +15,7 @@ def find_max(items):
     return max(items)
 
 def find_min(items):
-    """Find minimum value"""
+    """This function returns the lowest value in a list of numerical values"""
     return min(items)
 
 if __name__ == "__main__":
