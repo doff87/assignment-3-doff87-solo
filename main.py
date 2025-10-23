@@ -8,8 +8,7 @@ def calculate_total(items):
         items = [float(x) for x in items]
         return sum(items)
     except ValueError:
-        print("Error: All provided values must be numeric.")
-    return sum(items)
+        raise ValueError("Error: All provided values must be numeric.")
 
 def calculate_average(items):
     """Calculate average of items"""
@@ -17,8 +16,7 @@ def calculate_average(items):
         items = [float(x) for x in items]
         return sum(items) / len(items)
     except ValueError:
-        print("Error: All provided values must be numeric.")
-    return sum(items) / len(items)
+        raise ValueError("Error: All provided values must be numeric.")
 
 def find_max(items):
     """Find maximum value"""
@@ -26,8 +24,7 @@ def find_max(items):
         items = [float(x) for x in items]
         return max(items)
     except ValueError:
-        print("Error: All provided values must be numeric.")
-    return max(items)
+        raise ValueError("Error: All provided values must be numeric.")
 
 def find_min(items):
     """Find minimum value"""
@@ -35,8 +32,7 @@ def find_min(items):
         items = [float(x) for x in items]
         return min(items)
     except ValueError:
-        print("Error: All provided values must be numeric.")
-    return min(items)
+        raise ValueError("Error: All provided values must be numeric.")
 
 if __name__ == "__main__":
     numbers = [10, 20, 30, 40, 50]
