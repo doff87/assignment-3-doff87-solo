@@ -32,12 +32,35 @@ def test_calculate_total_floats():
     assert result == 6.0
 
 def test_calculate_total_empty():
-    """Total of [1, 2, 3] should be 6"""
+    """Empty list should return error message of 'No values provided to evaluate.'"""
     #arrange
     itemsEmpty
 
     #act
-    result = calculate_total(itemsEmpty)
+    errorMsg = capsys.readouterr()
 
     #assert
-    assert result == 6
+    assert "No values provided to evaluate." in errorMsg.out
+
+def test_calculate_total_none():
+    """None object should return error message of 'No values provided to evaluate.'"""
+    #arrange
+    itemsNone
+
+    #act
+    errorMsg = capsys.readouterr()
+
+    #assert
+    assert "No values provided to evaluate." in errorMsg.out
+
+def test_calculate_total_strings():
+    """String object in list will raise Value error"""
+    #arrange
+    itemsStrings
+
+    #act
+    with pytest.raises(ValueError) as errorMsg:
+        calculate_total(itemsStrings)
+
+    #assert
+    assert "Error: All provided values must be numeric." in str(errorMsg.value)
