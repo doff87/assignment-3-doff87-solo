@@ -4,10 +4,20 @@ Team Collaboration Project - Main Module
 
 def calculate_total(items):
     """Calculate total of items"""
+    try:
+        items = [float(x) for x in items]
+        return sum(items)
+    except ValueError:
+        print("Error: All provided values must be numeric.")
     return sum(items)
 
 def calculate_average(items):
     """Calculate average of items"""
+    try:
+        items = [float(x) for x in items]
+        return sum(items) / len(items)
+    except ValueError:
+        print("Error: All provided values must be numeric.")
     return sum(items) / len(items)
 
 def find_max(items):
