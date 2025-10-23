@@ -7,46 +7,28 @@ def calculate_total(items):
     if items is None or len(items) == 0:
         print("No values provided to evaluate.")
     else:
-        if all(isinstance(x, (int, float)) for x in items):
-            return sum(items)
-        else:
-            pass
-        
-
-    
+        return sum(items)
 
 def calculate_average(items):
     """Calculate average of items"""
     if items is None or len(items) == 0:
         print("No values provided to evaluate.")
     else:
-        if all(isinstance(x, (int, float)) for x in items):
-            return sum(items) / len(items)
-        else:
-            pass
-        
+        return sum(items) / len(items)
 
 def find_max(items):
     """Find maximum value"""
     if items is None or len(items) == 0:
         print("No values provided to evaluate.")
     else:
-        if all(isinstance(x, (int, float)) for x in items):
-            return max(items)
-        else:
-            pass
-        
+        return max(items)
 
 def find_min(items):
     """Find minimum value"""
     if items is None or len(items) == 0:
         print("No values provided to evaluate.")
     else:
-        if all(isinstance(x, (int, float)) for x in items):
-            return min(items)
-        else:
-            pass
-        
+        return min(items)
 
 if __name__ == "__main__":
     numbers = [10, 20, 30, 40, 50]
