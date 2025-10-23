@@ -3,19 +3,19 @@ Team Collaboration Project - Main Module
 """
 
 def calculate_total(items):
-    """Calculate total of items"""
+    """This function takes a list of numerical values and returns the sum of those values"""
     return sum(items)
 
 def calculate_average(items):
-    """Calculate average of items"""
+    """This function takes a list of numerical values, sums them, divides them by the number of values in the list, and then returns the average of the list"""
     return sum(items) / len(items)
 
 def find_max(items):
-    """Find maximum value"""
+    """This function returns the highest value in a list of numerical values"""
     return max(items)
 
 def find_min(items):
-    """Find minimum value"""
+    """This function returns the lowest value in a list of numerical values"""
     return min(items)
 
 if __name__ == "__main__":
