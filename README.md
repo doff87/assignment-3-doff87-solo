@@ -15,3 +15,4 @@ Your team collaboration project starts here!
 - Create pull requests
 - Review partner's code
 
+## Person B's Contributions
