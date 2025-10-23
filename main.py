@@ -3,33 +3,33 @@ Team Collaboration Project - Main Module
 """
 
 def calculate_total(items):
-    """Calculate total of items"""
+    """This function takes a list of numerical values and returns the sum of those values""""
     try:
-        items = [float(x) for x in items]
+        testItems = [float(x) for x in items]
         return sum(items)
     except ValueError:
         raise ValueError("Error: All provided values must be numeric.")
 
 def calculate_average(items):
-    """Calculate average of items"""
+    """This function takes a list of numerical values, sums them, divides them by the number of values in the list, and then returns the average of the list"""
     try:
-        items = [float(x) for x in items]
+        testItems = [float(x) for x in items]
         return sum(items) / len(items)
     except ValueError:
         raise ValueError("Error: All provided values must be numeric.")
 
 def find_max(items):
-    """Find maximum value"""
+    """This function returns the highest value in a list of numerical values"""
     try:
-        items = [float(x) for x in items]
+        testItems = [float(x) for x in items]
         return max(items)
     except ValueError:
         raise ValueError("Error: All provided values must be numeric.")
 
 def find_min(items):
-    """Find minimum value"""
+    """This function returns the lowest value in a list of numerical values"""
     try:
-        items = [float(x) for x in items]
+        testItems = [float(x) for x in items]
         return min(items)
     except ValueError:
         raise ValueError("Error: All provided values must be numeric.")
