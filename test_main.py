@@ -41,6 +41,7 @@ def test_calculate_total_empty(capsys):
     itemsEmpty
 
     #act
+    calculate_total(itemsEmpty)
     errorMsg = capsys.readouterr()
 
     #assert
@@ -52,6 +53,7 @@ def test_calculate_total_none(capsys):
     itemsNone
 
     #act
+    calculate_total(itemsNone)
     errorMsg = capsys.readouterr()
 
     #assert
@@ -101,6 +103,7 @@ def test_calculate_average_empty(capsys):
     itemsEmpty
 
     #act
+    calculate_average(itemsEmpty)
     errorMsg = capsys.readouterr()
 
     #assert
@@ -112,6 +115,7 @@ def test_calculate_average_none(capsys):
     itemsNone
 
     #act
+    calculate_average(itemsNone)
     errorMsg = capsys.readouterr()
 
     #assert
@@ -161,6 +165,7 @@ def test_find_max_empty(capsys):
     itemsEmpty
 
     #act
+    find_max(itemsEmpty)
     errorMsg = capsys.readouterr()
 
     #assert
@@ -172,6 +177,7 @@ def test_find_max_none(capsys):
     itemsNone
 
     #act
+    find_max(itemsNone)
     errorMsg = capsys.readouterr()
 
     #assert
@@ -222,6 +228,7 @@ def test_find_min_empty(capsys):
     itemsEmpty
 
     #act
+    find_min(itemsEmpty)
     errorMsg = capsys.readouterr()
 
     #assert
@@ -233,6 +240,7 @@ def test_find_min_none(capsys):
     itemsNone
 
     #act
+    find_min(itemsNone)
     errorMsg = capsys.readouterr()
 
     #assert
